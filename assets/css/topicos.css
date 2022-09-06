@@ -1,0 +1,57 @@
+.tópicos {
+    background: var(--azul-degrade);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.tópicos__titulo {
+    color: var(--branco);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+.tópicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tópicos__link {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--branco);
+    background-color: var(--laranja);
+    text-decoration: none;
+    padding: 1em;
+    transition: .5s;
+}
+
+.tópicos__item {
+    margin: 2em 0.5em;
+}
+
+@media screen and (min-width:1024px) {
+    .tópicos__titulo {
+        font-size: 24px;
+    }
+
+    .tópicos__link {
+        font-size: 24px;
+    }
+
+    .tópicos__link:hover {
+        background: #bd7100;
+    }
+
+    .tópicos__link:active {
+        background: transparent;
+        border: 1px solid var(--preto);
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .tópicos {
+        padding: 3em 30vw;
+    }
+}
